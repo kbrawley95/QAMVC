@@ -1,18 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
- <header>
-  	<nav class="navbar navbar-default">
-	  <div class="row-fluid">
-	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">WebSiteName</a>
-	    </div>
-		    <ul class="nav navbar-left sidebar">
-		      <li class="nav-item"><a href="#">Home</a></li>
-		      <li class="nav-item"><a href="#">Page 1</a></li>
-		      <li class="nav-item"><a href="#">Page 2</a></li>
-		      <li class="nav-item"><a href="#">Page 3</a></li>
-		    </ul>
-	  </div>
-	</nav>
-  </header>
+ <div id="mySidenav" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
