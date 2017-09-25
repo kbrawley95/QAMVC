@@ -3,9 +3,11 @@
 <%@ include file="common/header.jsp"%>
 
   <body>
-    <h1>Hello, world!</h1>
+  	<main class="container-fluid">
+    	<h1>Hello, world!</h1>
+    	
+  	</main>
 
-   
 	<%@ include file="common/scripts.jsp"%>
   </body>
 <%@ include file="common/footer.jsp"%>

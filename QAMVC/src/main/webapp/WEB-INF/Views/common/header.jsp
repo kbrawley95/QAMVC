@@ -1,3 +1,4 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Custom Main.css -->
+    <spring:url value="/resources/public-resources/css/main.css"  var="mainCSS" />
+    <link href="${mainCSS}" rel="stylesheet" />
     
   </head>
   <header>
@@ -26,3 +29,4 @@
 	  </div>
 	</nav>
   </header>
+  <hr/>
