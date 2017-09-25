@@ -4,6 +4,9 @@
 
   <body>
   	<main class="container-fluid">
+  
+  	
+  	
     	<div id="main_area">
         <!-- Slider -->
         <div class="row">

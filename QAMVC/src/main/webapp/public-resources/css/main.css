@@ -22,9 +22,45 @@ body{
 	color: white;
 }
 
+<<<<<<< HEAD
 .banner{
 	padding:0;
+=======
+
+/* Side Bar
+======================================*/
+
+.sidebar{
+	border: 2px solid black;
+	width: 10%;
+	height: 100%;
+	padding: 0;
+	margin-top: 0px;
+	background-color: orange;
+	align-self: left;
+}
+
+
+/* Home Page
+======================================*/
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+>>>>>>> f6d8aa410c5f5b51357a108f7a3c8338fcbd34e0
 }
 
 /* Footer
 ======================================*/
+footer{
+	text-align: center;
+}
