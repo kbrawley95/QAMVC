@@ -11,11 +11,11 @@ Surname varchar(50),
 Address varchar(50),
 City varchar(50),
 Postcode varchar(50),
-PhoneNo int,
+PhoneNo varchar(50),
 Email varchar(50),
 CardName varchar(50),
-CardNumber int,
-SecurityNo int,
+CardNumber varchar(50),
+SecurityNo varchar(50),
 ExpiryDate date,
 primary key (CustomerID)
 );
@@ -23,7 +23,7 @@ primary key (CustomerID)
 create table Products(
 ProductID int not null,
 Name varchar(50),
-Size int,
+Size varchar(50),
 Type varchar(50),
 Description varchar(50),
 Price double precision,

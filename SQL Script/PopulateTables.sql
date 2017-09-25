@@ -3,7 +3,7 @@ go
 
 BULK
 INSERT Customers
-FROM 'C:\Users\Administrator\Downloads\Customer.csv'
+FROM 'C:\Users\Administrator\Desktop\QAMVC\SQL Script\Customer.csv'
 WITH
 (
 FIELDTERMINATOR = ',',
@@ -13,7 +13,7 @@ GO
 
 BULK
 INSERT Products
-FROM 'C:\Users\Administrator\Downloads\Product.csv'
+FROM 'C:\Users\Administrator\Desktop\QAMVC\SQL Script\Product.csv'
 WITH
 (
 FIELDTERMINATOR = ',',
@@ -23,7 +23,7 @@ GO
 
 BULK
 INSERT Orders
-FROM 'C:\Users\Administrator\Downloads\Order.csv'
+FROM 'C:\Users\Administrator\Desktop\QAMVC\SQL Script\Order.csv'
 WITH
 (
 FIELDTERMINATOR = ',',
@@ -33,7 +33,7 @@ GO
 
 BULK
 INSERT OrderLine
-FROM 'C:\Users\Administrator\Downloads\OrderLine.csv'
+FROM 'C:\Users\Administrator\Desktop\QAMVC\SQL Script\OrderLine.csv'
 WITH
 (
 FIELDTERMINATOR = ',',
