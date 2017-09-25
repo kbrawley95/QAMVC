@@ -22,10 +22,9 @@ body{
 	color: white;
 }
 
-<<<<<<< HEAD
 .banner{
 	padding:0;
-=======
+}
 
 /* Side Bar
 ======================================*/
@@ -56,7 +55,6 @@ body{
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     width: 100%;
->>>>>>> f6d8aa410c5f5b51357a108f7a3c8338fcbd34e0
 }
 
 /* Footer
