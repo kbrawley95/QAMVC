@@ -13,21 +13,22 @@
     <spring:url value="/resources/public-resources/css/main.css"  var="mainCSS" />
     <link href="${mainCSS}" rel="stylesheet" />
     
+    <spring:url value="/resources/public-resources/imgs/logo.png"  var="logo" />
+    
   </head>
   <header>
   	<div class="banner_area">
-  		<a id="banner_1"><img class="banner" id="banner" src="http://placehold.it/1166x150&text=1" alt=""></a>
+  		<a id="banner_1"><img class="banner" id="banner" src="${logo}" alt=""></a>
   	</div>
   	<nav class="navbar navbar-fixed">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">WebSiteName</a>
+	      <a class="navbar-brand" href="#">QA Cinemas</a>
 	    </div>
 		    <ul class="nav navbar-left">
 		      <li class="nav-item"><a href="#">Home</a></li>
-		      <li class="nav-item"><a href="#">Page 1</a></li>
-		      <li class="nav-item"><a href="#">Page 2</a></li>
-		      <li class="nav-item"><a href="#">Page 3</a></li>
+		      <li class="nav-item"><a href="#">About Us</a></li>
+		      <li class="nav-item"><a href="#">Contact Us</a></li>
 		    </ul>
 	  </div>
 	</nav>
