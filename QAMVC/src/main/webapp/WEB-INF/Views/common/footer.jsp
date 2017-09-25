@@ -1,5 +1,5 @@
 	<hr/>
 	<footer>
-		&copy; 2017
+		QA Cinemas &copy; 2017
 	</footer>
 </html>
