@@ -12,7 +12,7 @@ body{
 /* Navigation
 ======================================*/
 .navbar{
-	background-color: orange;
+	background-color: #ea783f;
 	
 }
 .navbar-brand{
@@ -20,6 +20,10 @@ body{
 }
 .nav > li > a{
 	color: white;
+}
+
+.banner_area{
+	border-bottom:  1px solid black;
 }
 
 #banner_1 img{
@@ -37,7 +41,7 @@ body{
     z-index: 1;
     top: 26%;
     left: 0;
-    background-color: orange;
+    background-color: #e1dee3;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -49,7 +53,8 @@ body{
     font-size: 25px;
     color: #ffffff;
     display: block;
-    transition: 0.3s;
+	transition: 0.3s;
+	text-shadow: 2px 1px 4px #000000;
 }
 
 
