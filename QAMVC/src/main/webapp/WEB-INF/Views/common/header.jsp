@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 	integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     
     <!-- Custom Main.css -->
     <spring:url value="/resources/public-resources/css/main.css"  var="mainCSS" />
@@ -15,6 +15,9 @@
     
   </head>
   <header>
+  	<div class="banner_area">
+  		<a id="banner_1"><img class="banner" id="banner" src="http://placehold.it/1166x150&text=1" alt=""></a>
+  	</div>
   	<nav class="navbar navbar-fixed">
 	  <div class="container-fluid">
 	    <div class="navbar-header">

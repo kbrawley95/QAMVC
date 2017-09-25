@@ -4,6 +4,10 @@
 
   <body>
   	<main class="container-fluid">
+  	
+  	 <%@ include file="common/sidebar.jsp"%>
+  	
+  	
     	<div id="main_area">
         <!-- Slider -->
         <div class="row">
