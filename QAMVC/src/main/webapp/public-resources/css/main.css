@@ -1,7 +1,26 @@
+/* Global Styling
+======================================*/
 
 body{
 	color: red;
+	background: #ffffff;
 }
+
+/* Header
+======================================*/
+
+/* Navigation
+======================================*/
 .navbar{
 	background-color: orange;
+	
 }
+.navbar-brand{
+	color: white;
+}
+.nav > li > a{
+	color: white;
+}
+
+/* Footer
+======================================*/
