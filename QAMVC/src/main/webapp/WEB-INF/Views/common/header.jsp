@@ -15,6 +15,9 @@
     
   </head>
   <header>
+  	<div class="banner_area">
+  		<a id="banner_1"><img class="banner" id="banner" src="http://placehold.it/1166x150&text=1" alt=""></a>
+  	</div>
   	<nav class="navbar navbar-fixed">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
