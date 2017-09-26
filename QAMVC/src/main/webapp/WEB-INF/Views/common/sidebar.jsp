@@ -9,6 +9,6 @@
   <a href="#">Contact</a>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776 &nbsp Menu</span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()" id ="menuButton">&#9776 &nbsp Menu</span>
 
 
