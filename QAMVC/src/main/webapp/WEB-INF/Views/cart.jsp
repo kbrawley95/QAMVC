@@ -28,7 +28,7 @@
 									</div>
 								</div>
 							</td>
-							<td data-th="Price">ï¿½10.99</td>
+							<td data-th="Price">£10.99</td>
 							<td data-th="Quantity">
 								<input type="number" class="form-control text-center" value="1">
 							</td>
@@ -46,7 +46,7 @@
 						<tr>
 							<td><a href="/home" class=" btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
 							<td colspan="2" class="hidden-xs"></td>
-							<td class="hidden-xs text-center"><strong>Total ï¿½10.99</strong></td>
+							<td class="hidden-xs text-center"><strong>Total £10.99</strong></td>
 							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
 						</tr>
 					</tfoot>
