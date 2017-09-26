@@ -4,7 +4,7 @@
 
 <body>
 	<main class="container-fluid"> <%@ include
-		file="common/sidebar.jsp"%> 
+		file="common/sidebar.jsp"%>
 
 	<div id="main_area">
 		<!-- Slider ------------------------------------------------->
@@ -15,11 +15,16 @@
 					<li class="col-sm-3"><a class="thumbnail"
 						id="carousel-selector-0"> <img
 							src="http://placehold.it/150x150&text=zero">
-					</a></li>
+					</a>
+						<div class="container-fluid" id="carousel-selector-1-text">
+						
+						</div>
+					</li>
 
 					<li class="col-sm-3"><a class="thumbnail"
 						id="carousel-selector-1"><img
 							src="http://placehold.it/150x150&text=1"></a></li>
+
 
 					<li class="col-sm-3"><a class="thumbnail"
 						id="carousel-selector-2"><img
@@ -75,7 +80,7 @@
 							src="http://placehold.it/150x150&text=15"></a></li>
 				</ul>
 			</div>
-		
+
 			<div class="col-sm-6">
 				<div class="col-xs-12" id="slider">
 					<!-- Top part of the slider -->
@@ -160,17 +165,21 @@
 						</div>
 					</div>
 					<div class="container-fluid" id="carousel-text"></div>
-					
+
 					<c:forEach items="${products}" var="product" varStatus="inner">
-					<div id="slide-content" style="display: none;">
-						<div id="slide-content-${inner.index}">
-							<h2>${product.getName()}</h2>
-							<p><h2>${product.getDescription()}</h2></p>
-							<p class="sub-text">
-								<h3><strong>£${product.getPrice()}</strong></h3>
-							</p>
+						<div id="slide-content" style="display: none;">
+							<div id="slide-content-${inner.index}">
+								<h2>${product.getName()}</h2>
+								<p>
+								<h2>${product.getDescription()}</h2>
+								</p>
+								<p class="sub-text">
+								<h3>
+									<strong>£${product.getPrice()}</strong>
+								</h3>
+								</p>
+							</div>
 						</div>
-					</div>
 					</c:forEach>
 
 				</div>
