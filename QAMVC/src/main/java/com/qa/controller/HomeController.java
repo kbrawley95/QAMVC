@@ -11,4 +11,12 @@ public class HomeController {
 		
 		return "home";
 	}
+	
+	@RequestMapping(value="/cart")
+	public String cart() {
+		
+		return "cart";
+	}
+	
+	
 }
