@@ -12,6 +12,8 @@ public class HomeController {
 		return "home";
 	}
 	
+<<<<<<< HEAD
+=======
 	@RequestMapping(value="/cart")
 	public String cart() {
 		
@@ -19,4 +21,5 @@ public class HomeController {
 	}
 	
 	
+>>>>>>> 5594b584745465bdb72aa488ebd668e33e4400d5
 }
