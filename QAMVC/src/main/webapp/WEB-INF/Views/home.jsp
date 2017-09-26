@@ -8,7 +8,7 @@
   	 <%@ include file="common/sidebar.jsp"%>
 
     	<div id="main_area">
-        <!-- Slider -->
+        <!-- Slider ------------------------------------------------->
         <div class="row">
             <div class="col-sm-6" id="slider-thumbs">
                 <!-- Bottom switcher of slider -->
@@ -133,7 +133,7 @@
                                     <div class="item" data-slide-number="15">
                                         <img src="http://placehold.it/470x480&text=15"></div>
                                 </div>
-                                <!-- Carousel nav -->
+                                <!-- Carousel nav ---------------------------------------------->
                                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left"></span>
                                 </a>
@@ -145,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <!--/Slider-->
+            <!--/Slider----------------------->
         </div>
 
     </div>
