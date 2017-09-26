@@ -26,10 +26,10 @@
 	      <a class="navbar-brand" href="#">QA Cinemas</a>
 	    </div>
 		    <ul class="nav navbar-left">
-		      <li class="nav-item"><a href="#">Home</a></li>
+		      <li class="nav-item"><a href="/home">Home</a></li>
 		      <li class="nav-item"><a href="#">About Us</a></li>
 		      <li class="nav-item"><a href="#">Contact Us</a></li>
-		      <li class="nav-item"><a href="#">Shopping Cart</a></li>
+		      <li class="nav-item"><a href="/cart">Shopping Cart</a></li>
 		    </ul>
 	  </div>
 	</nav>
