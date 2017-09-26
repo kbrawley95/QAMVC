@@ -25,7 +25,7 @@
         });
         
         
-        
+        $('#carousel-text').html($('#slide-content-0').html());
         
 });
   
