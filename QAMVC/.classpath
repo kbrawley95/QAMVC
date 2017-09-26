@@ -29,6 +29,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="src/main/webapp/mssql-jdbc-6.2.1.jre8.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/mssql-jdbc-6.2.1.jre8.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
