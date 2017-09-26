@@ -24,7 +24,7 @@ public class ProductService implements IProductService {
 		// TODO Auto-generated method stub
 		
 		RowMapper<Product> mapper = new ProductRowMapper();
-		String sql = "select * from do.Products";
+		String sql = "select * from dbo.Products";
 		return (ArrayList<Product>) getJdbcTemplate().query(sql, mapper);
 	}
 

@@ -6,6 +6,10 @@
   	<main class="container-fluid">
   	
   	 <%@ include file="common/sidebar.jsp"%>
+  	 
+  	 	<c:forEach items="${products}" var="product">
+		    ${product.getName()}<br>
+		</c:forEach>
 
     	<div id="main_area">
         <!-- Slider ------------------------------------------------->
