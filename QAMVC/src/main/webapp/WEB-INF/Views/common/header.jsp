@@ -29,7 +29,6 @@
 		      <li class="nav-item"><a href="#">Home</a></li>
 		      <li class="nav-item"><a href="#">About Us</a></li>
 		      <li class="nav-item"><a href="#">Contact Us</a></li>
-		      <li class="nav-item"><a href="#">Shopping Cart</a></li>
 		    </ul>
 	  </div>
 	</nav>
