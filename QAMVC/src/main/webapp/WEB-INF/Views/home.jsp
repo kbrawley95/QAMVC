@@ -4,10 +4,7 @@
 
 <body>
 	<main class="container-fluid"> <%@ include
-		file="common/sidebar.jsp"%> <c:forEach
-		items="${products}" var="product">
-		    ${product.getName()}<br>
-	</c:forEach>
+		file="common/sidebar.jsp"%> 
 
 	<div id="main_area">
 		<!-- Slider ------------------------------------------------->
@@ -78,6 +75,7 @@
 							src="http://placehold.it/150x150&text=15"></a></li>
 				</ul>
 			</div>
+		
 			<div class="col-sm-6">
 				<div class="col-xs-12" id="slider">
 					<!-- Top part of the slider -->
@@ -162,56 +160,18 @@
 						</div>
 					</div>
 					<div class="container-fluid" id="carousel-text"></div>
-
+					
+					<c:forEach items="${products}" var="product" varStatus="inner">
 					<div id="slide-content" style="display: none;">
-						<div id="slide-content-0">
-							<h2>Slider One</h2>
-							<p>Lorem Ipsum Dolor</p>
+						<div id="slide-content-${inner.index}">
+							<h2>${product.getName()}</h2>
+							<p><h2>${product.getDescription()}</h2></p>
 							<p class="sub-text">
-								October 24 2012 - <a href="#">Read more</a>
-							</p>
-						</div>
-
-						<div id="slide-content-1">
-							<h2>Slider Two</h2>
-							<p>Lorem Ipsum Dolor</p>
-							<p class="sub-text">
-								October 24 2012 - <a href="#">Read more</a>
-							</p>
-						</div>
-
-						<div id="slide-content-2">
-							<h2>Slider Three</h2>
-							<p>Lorem Ipsum Dolor</p>
-							<p class="sub-text">
-								October 24 2012 - <a href="#">Read more</a>
-							</p>
-						</div>
-
-						<div id="slide-content-3">
-							<h2>Slider Four</h2>
-							<p>Lorem Ipsum Dolor</p>
-							<p class="sub-text">
-								October 24 2012 - <a href="#">Read more</a>
-							</p>
-						</div>
-
-						<div id="slide-content-4">
-							<h2>Slider Five</h2>
-							<p>Lorem Ipsum Dolor</p>
-							<p class="sub-text">
-								October 24 2012 - <a href="#">Read more</a>
-							</p>
-						</div>
-
-						<div id="slide-content-5">
-							<h2>Slider Six</h2>
-							<p>Lorem Ipsum Dolor</p>
-							<p class="sub-text">
-								October 24 2012 - <a href="#">Read more</a>
+								<h3><strong>£${product.getPrice()}</strong></h3>
 							</p>
 						</div>
 					</div>
+					</c:forEach>
 
 				</div>
 			</div>
