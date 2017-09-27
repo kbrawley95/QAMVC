@@ -24,13 +24,14 @@
   	<nav class="navbar navbar-fixed">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">QA Cinemas</a>
+	      <a class="navbar-brand" href="https://www.qa.com/">QA Cinemas</a>
 	    </div>
 		    <ul class="nav navbar-left">
 		      <li class="nav-item"><a href="/home">Home</a></li>
 		      <li class="nav-item"><a href="#">About Us</a></li>
 		      <li class="nav-item"><a href="#">Contact Us</a></li>
 		      <li class="nav-item"><a href="/cart">Shopping Cart</a></li>
+		      <li class="nav-item"><a href="#">Login/Register</a></li>
 		    </ul>
 	  </div>
 	</nav>
