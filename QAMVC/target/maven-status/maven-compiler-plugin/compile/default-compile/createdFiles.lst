@@ -1,1 +1,4 @@
+com\qa\service\ICustomerService.class
+com\qa\service\CustomerService.class
 com\qa\controller\HomeController.class
+com\qa\model\Customer.class
