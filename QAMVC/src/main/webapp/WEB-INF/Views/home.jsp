@@ -34,7 +34,7 @@
 								<!-- Carousel items -->
 								<div class="carousel-inner">
 									<div class="active item" data-slide-number="0">
-										<img src="http://placehold.it/300x300&text=WELCOME!">
+										<img src="/resources/public-resources/imgs/welcome.jpg" style="width: 580px; height: 580px;" >
 										<div class="container-fluid" id="slide-content-0" style="display: none;">
 										
 										</div>
