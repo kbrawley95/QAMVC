@@ -4,7 +4,7 @@
   jQuery(document).ready(function($) {
  
         $('#myCarousel').carousel({
-                interval: 5000
+                interval: 1000
         });
  
         //Handles the carousel thumbnails
@@ -27,14 +27,6 @@
         
         
         $('#carousel-text').html($('#slide-content-0').html());
-        
-        $('[id^=carousel-selector-]').hover(function(){
-   		 	$('#carousel-selector-1-text').show();
-	   	}, function(){
-	   		$('#carousel-selector-1-text').hide();
-	   	});	
-        
-        
 });
   
   
