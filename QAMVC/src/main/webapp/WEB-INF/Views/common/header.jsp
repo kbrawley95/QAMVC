@@ -28,8 +28,8 @@
 	    </div>
 		    <ul class="nav navbar-left">
 		      <li class="nav-item"><a href="/home">Home</a></li>
-		      <li class="nav-item"><a href="#">About Us</a></li>
-		      <li class="nav-item"><a href="#">Contact Us</a></li>
+		      <li class="nav-item"><a href="/aboutus">About Us</a></li>
+		      <li class="nav-item"><a href="/contactus">Contact Us</a></li>
 		      <li class="nav-item"><a href="/cart">Shopping Cart</a></li>
 		      <li class="nav-item"><a href="/login">Login/Register</a></li>
 		    </ul>

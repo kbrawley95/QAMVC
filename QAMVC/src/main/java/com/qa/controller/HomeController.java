@@ -33,6 +33,18 @@ public class HomeController {
 		return "checkout";
 	}
 	
+	@RequestMapping(value="/contactus")
+	public String contactus() {
+		
+		return "contactus";
+	}
+	
+	@RequestMapping(value="/aboutus")
+	public String aboutus() {
+		
+		return "aboutus";
+	}
+
 	@RequestMapping(value="/login")
 	public String login() {
 		
@@ -44,6 +56,7 @@ public class HomeController {
 		
 		return "confirmation";
 	}
+	
 	
 
 }
