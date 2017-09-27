@@ -29,6 +29,14 @@
         $('#carousel-text').html($('#slide-content-0').html());
 });
   
+  // javascript for the confirmation page
+  jQuery(document).ready(function($) {
+	    jQuery('.modal').modal('show').on('hide.bs.modal', function(e){
+	      e.preventDefault();
+	    });
+	    jQuery('.modal').modal('hide')
+	});
+  
   
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";

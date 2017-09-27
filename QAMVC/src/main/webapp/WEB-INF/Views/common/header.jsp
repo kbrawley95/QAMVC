@@ -31,7 +31,7 @@
 		      <li class="nav-item"><a href="#">About Us</a></li>
 		      <li class="nav-item"><a href="#">Contact Us</a></li>
 		      <li class="nav-item"><a href="/cart">Shopping Cart</a></li>
-		      <li class="nav-item"><a href="#">Login/Register</a></li>
+		      <li class="nav-item"><a href="/login">Login/Register</a></li>
 		    </ul>
 	  </div>
 	</nav>

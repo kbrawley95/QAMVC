@@ -33,5 +33,17 @@ public class HomeController {
 		return "checkout";
 	}
 	
+	@RequestMapping(value="/login")
+	public String login() {
+		
+		return "login";
+	}
+	
+	@RequestMapping(value="/confirmation")
+	public String confirmation() {
+		
+		return "confirmation";
+	}
+	
 
 }
