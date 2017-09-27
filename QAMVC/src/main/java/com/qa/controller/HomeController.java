@@ -27,6 +27,8 @@ public class HomeController {
 		return "cart";
 	}
 	
+	
+	
 	@RequestMapping(value="/checkout")
 	public String checkout() {
 		
