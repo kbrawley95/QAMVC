@@ -12,9 +12,8 @@
                 </div>
                 <div class="row">
                     <div style="display: table; margin: auto;">
-                        <span class="step step_complete"> <a href="#" class="check-bc">Cart</a> <span class="step_line step_complete"> </span> <span class="step_line backline"> </span> </span>
-                        <span class="step step_complete"> <a href="#" class="check-bc">Checkout</a> <span class="step_line "> </span> <span class="step_line step_complete"> </span> </span>
-                        <span class="step_thankyou check-bc step_complete">Thank you</span>
+                        <span class="step step_complete"> <a href="/cart" class="check-bc">Cart</a> <span class="step_line step_complete"> </span> <span class="step_line backline"> </span> </span>
+                        <span class="step step_complete"> <a href="/checkout" class="check-bc">Checkout</a> <span class="step_line "> </span> <span class="step_line step_complete"> </span> </span>
                     </div>
                 </div>
                 <div class="row">
@@ -28,7 +27,7 @@
                     <!--REVIEW ORDER-->
                     <div class="panel panel-info">
                         <div class="panel-heading">
-                            Review Order <div class="pull-right"><small><a class="afix-1" href="#">Edit Cart</a></small></div>
+                            Review Order <div class="pull-right"></div>
                         </div>
                         <div class="panel-body">
                             <div class="form-group">
@@ -36,55 +35,29 @@
                                     <img class="img-responsive" src="//c1.staticflickr.com/1/466/19681864394_c332ae87df_t.jpg" />
                                 </div>
                                 <div class="col-sm-6 col-xs-6">
-                                    <div class="col-xs-12">Product name</div>
+                                    <div class="col-xs-12">Batman T-Shirt</div>
                                     <div class="col-xs-12"><small>Quantity:<span>1</span></small></div>
                                 </div>
                                 <div class="col-sm-3 col-xs-3 text-right">
-                                    <h6><span>$</span>25.00</h6>
-                                </div>
-                            </div>
-                            <div class="form-group"><hr /></div>
-                            <div class="form-group">
-                                <div class="col-sm-3 col-xs-3">
-                                    <img class="img-responsive" src="//c1.staticflickr.com/1/466/19681864394_c332ae87df_t.jpg" />
-                                </div>
-                                <div class="col-sm-6 col-xs-6">
-                                    <div class="col-xs-12">Product name</div>
-                                    <div class="col-xs-12"><small>Quantity:<span>1</span></small></div>
-                                </div>
-                                <div class="col-sm-3 col-xs-3 text-right">
-                                    <h6><span>$</span>25.00</h6>
-                                </div>
-                            </div>
-                            <div class="form-group"><hr /></div>
-                            <div class="form-group">
-                                <div class="col-sm-3 col-xs-3">
-                                    <img class="img-responsive" src="//c1.staticflickr.com/1/466/19681864394_c332ae87df_t.jpg" />
-                                </div>
-                                <div class="col-sm-6 col-xs-6">
-                                    <div class="col-xs-12">Product name</div>
-                                    <div class="col-xs-12"><small>Quantity:<span>2</span></small></div>
-                                </div>
-                                <div class="col-sm-3 col-xs-3 text-right">
-                                    <h6><span>$</span>50.00</h6>
+                                    <h6><span>£</span>10.99</h6>
                                 </div>
                             </div>
                             <div class="form-group"><hr /></div>
                             <div class="form-group">
                                 <div class="col-xs-12">
                                     <strong>Subtotal</strong>
-                                    <div class="pull-right"><span>$</span><span>200.00</span></div>
+                                    <div class="pull-right"><span>£</span><span>10.99</span></div>
                                 </div>
                                 <div class="col-xs-12">
                                     <small>Shipping</small>
-                                    <div class="pull-right"><span>-</span></div>
+                                    <div class="pull-right"><span>£3.00</span></div>
                                 </div>
                             </div>
                             <div class="form-group"><hr /></div>
                             <div class="form-group">
                                 <div class="col-xs-12">
                                     <strong>Order Total</strong>
-                                    <div class="pull-right"><span>$</span><span>150.00</span></div>
+                                    <div class="pull-right"><span>£</span><span>13.99</span></div>
                                 </div>
                             </div>
                         </div>
@@ -102,9 +75,9 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Country:</strong></div>
+                                <div class="col-md-12"><strong>Customer ID:</strong></div>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" name="country" value="" />
+                                    <input type="text" class="form-control" name="ID" value="" />
                                 </div>
                             </div>
                             <div class="form-group">
@@ -114,7 +87,7 @@
                                 </div>
                                 <div class="span1"></div>
                                 <div class="col-md-6 col-xs-12">
-                                    <strong>Last Name:</strong>
+                                    <strong>Surname:</strong>
                                     <input type="text" name="last_name" class="form-control" value="" />
                                 </div>
                             </div>
@@ -131,13 +104,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>State:</strong></div>
-                                <div class="col-md-12">
-                                    <input type="text" name="state" class="form-control" value="" />
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-12"><strong>Zip / Postal Code:</strong></div>
+                                <div class="col-md-12"><strong>Post Code:</strong></div>
                                 <div class="col-md-12">
                                     <input type="text" name="zip_code" class="form-control" value="" />
                                 </div>
@@ -168,8 +135,12 @@
                                     </select>
                                 </div>
                             </div>
+                          <div class="form-group">
+                                <div class="col-md-12"><strong>Card Name:</strong></div>
+                                <div class="col-md-12"><input type="text" class="form-control" name="car_number" value="" /></div>
+                            </div>
                             <div class="form-group">
-                                <div class="col-md-12"><strong>Credit Card Number:</strong></div>
+                                <div class="col-md-12"><strong>Card Number:</strong></div>
                                 <div class="col-md-12"><input type="text" class="form-control" name="car_number" value="" /></div>
                             </div>
                             <div class="form-group">
