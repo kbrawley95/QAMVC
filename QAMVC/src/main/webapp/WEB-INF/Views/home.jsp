@@ -13,10 +13,11 @@
 				<!-- Bottom switcher of slider -->
 				<ul class="hide-bullets">
 
+					<spring:url value="/resources/public-resources/imgs/"  var="imagesDir" />
 					<c:forEach items="${products}" var="product" varStatus="inner">
 						<li class="col-sm-3"><a class="thumbnail"
 							id="carousel-selector-${inner.index+1}"> <img
-								src="/resources/public-resources/imgs/logo.png">
+								src="${imagesDir}${product.getName()}.jpg">
 								£${product.getPrice()}
 						</a></li>
 					</c:forEach>
@@ -34,10 +35,11 @@
 									<div class="active item" data-slide-number="0">
 										<img src="http://placehold.it/300x300&text=WELCOME!">
 									</div>
-
+				
 									<c:forEach items="${products}" var="product" varStatus="inner">
 										<div class="item" data-slide-number="${inner.index+1}">
-											<img src="http://placehold.it/300x300&text=${inner.index+1}">
+											<img
+								src="${imagesDir}${product.getName()}.jpg">
 											<div id="slide-content" style="display: none;">
 												<div id="slide-content-${inner.index+1}">
 													<h2>${product.getName()}</h2>

@@ -78,8 +78,6 @@ public class Product {
 	public void convertImage(byte[] image) {
 		imageFileName ="C:/Users/Administrator/Documents/GitHub/QAMVC/QAMVC/src/main/webapp/public-resources/imgs/" +name + ".jpg";
 		
-		imageFileName=imageFileName.replace(" ", "");
-		
 		InputStream in = new ByteArrayInputStream(image);
 		try {
 			BufferedImage bufferedImage = ImageIO.read(in);
