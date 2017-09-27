@@ -54,6 +54,9 @@
 													<h3>
 														<strong>£${product.getPrice()}</strong>
 													</h3>
+													<form action="/cart" action="post">
+														<input class="cartButton" type="submit"   value="Add to Cart">
+													</form>
 												</div>
 											</div>
 										</div>

@@ -1,5 +1,5 @@
-com\qa\service\IProductService.class
-com\qa\service\ProductRowMapper.class
 com\qa\service\ProductService.class
 com\qa\model\Product.class
+com\qa\service\IProductService.class
+com\qa\service\ProductRowMapper.class
 com\qa\controller\HomeController.class

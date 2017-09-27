@@ -85,6 +85,10 @@ body{
 /* Home Page
 ======================================*/
 
+#carousel-text{
+	padding-left: 15%;
+}
+
 .hide-bullets {
     list-style:none;
     margin-left: -40px;
@@ -93,6 +97,15 @@ body{
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     width: 100%;
+}
+
+.cartButton{
+	background: #ea783f;
+	color: #ffffff;
+	float: left;
+
+	padding: 10px;
+	border: 2px solid black 
 }
 
 /* Footer
