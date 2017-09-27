@@ -2,13 +2,13 @@ package com.qa.model;
 
 public class Product {
 
-	String name;
-	String size;
-	String type;
-	String description;
-	double price;
-	String colour;
-	boolean isPromotionalProduct;
+	private String name;
+	private String size;
+	private String type;
+	private String description;
+	private double price;
+	private String colour;
+	private boolean isPromotionalProduct;
 	
 	public Product() {
 		

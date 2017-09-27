@@ -14,6 +14,7 @@
             var id = /-(\d+)$/.exec(id_selector)[1];
             console.log(id_selector, id);
             jQuery('#myCarousel').carousel(parseInt(id));
+           
         } catch (e) {
             console.log('Regex failed!', e);
         }
@@ -25,9 +26,17 @@
         });
         
         
+        $('#carousel-text').html($('#slide-content-0').html());
+        
+        $('[id^=carousel-selector-]').hover(function(){
+   		 	$('#carousel-selector-1-text').show();
+	   	}, function(){
+	   		$('#carousel-selector-1-text').hide();
+	   	});	
         
         
 });
+  
   
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
