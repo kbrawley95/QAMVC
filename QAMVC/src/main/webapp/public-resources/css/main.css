@@ -65,6 +65,8 @@ body{
     padding-top: 60px;
 }
 
+
+
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -87,10 +89,6 @@ body{
     list-style:none;
     margin-left: -40px;
     margin-top:20px;
-}
-
-.thumbnail {
-    padding: 0;
 }
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
