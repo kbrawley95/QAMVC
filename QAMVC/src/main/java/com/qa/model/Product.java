@@ -1,5 +1,13 @@
 package com.qa.model;
 
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+
+import javax.imageio.ImageIO;
+
 public class Product {
 
 	private String name;
@@ -8,7 +16,10 @@ public class Product {
 	private String description;
 	private double price;
 	private String colour;
+	private byte[] image;
+	
 	private boolean isPromotionalProduct;
+	private String imageFileName;
 	
 	public Product() {
 		
@@ -35,6 +46,7 @@ public class Product {
 	public String getSize() {
 		return size;
 	}
+
 	public void setSize(String size) {
 		this.size = size;
 	}
@@ -61,6 +73,39 @@ public class Product {
 	}
 	public void setColour(String colour) {
 		this.colour = colour;
+	}
+	
+	public void convertImage(byte[] image) {
+		imageFileName ="C:/Users/Administrator/Documents/GitHub/QAMVC/QAMVC/src/main/webapp/public-resources/imgs/" +name + ".jpg";
+		
+		imageFileName=imageFileName.replace(" ", "");
+		
+		InputStream in = new ByteArrayInputStream(image);
+		try {
+			BufferedImage bufferedImage = ImageIO.read(in);
+			ImageIO.write(bufferedImage, "jpg", new File(imageFileName));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	public void setImage(byte[] image) {
+		this.image = image;
+		
+		convertImage(this.image);
+	}
+	public String getImageFileName() {
+		return imageFileName;
+	}
+	
+	public void setImageFileName(String imageFileName) {
+		this.imageFileName = imageFileName;
+	}
+	
+	public byte[] getImage() {
+		return image;
 	}
 	public boolean isPromotionalProduct() {
 		return isPromotionalProduct;

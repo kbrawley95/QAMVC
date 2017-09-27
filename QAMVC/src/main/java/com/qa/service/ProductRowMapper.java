@@ -20,6 +20,7 @@ public class ProductRowMapper implements  RowMapper<Product> {
 		product.setDescription(rs.getString("Description"));
 		product.setPrice(rs.getDouble("Price"));
 		product.setColour(rs.getString("Colour"));
+		product.setImage(rs.getBytes("Image"));
 		product.setPromotionalProduct(rs.getBoolean("PromotionalProduct"));
 
 		return product;
