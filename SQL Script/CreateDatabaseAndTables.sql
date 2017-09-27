@@ -28,6 +28,7 @@ Type varchar(50),
 Description varchar(50),
 Price double precision,
 Colour varchar(50),
+Image image,
 PromotionalProduct bit,
 primary key(ProductID)
 );
