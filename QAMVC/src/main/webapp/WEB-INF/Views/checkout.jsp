@@ -12,8 +12,8 @@
                 </div>
                 <div class="row">
                     <div style="display: table; margin: auto;">
-                        <span class="step step_complete"> <a href="/cart" class="check-bc">Cart</a> <span class="step_line step_complete"> </span> <span class="step_line backline"> </span> </span>
-                        <span class="step step_complete"> <a href="/checkout" class="check-bc">Checkout</a> <span class="step_line "> </span> <span class="step_line step_complete"> </span> </span>
+                        <span class="step step_complete"> <a href="/home" class="check-bc">Back to Products</a> <span class="step_line step_complete"> </span> <span class="step_line backline"> </span> </span>
+                        <span class="step step_complete"> <a href="/cart" class="check-bc">Back to Cart</a> <span class="step_line "> </span> <span class="step_line step_complete"> </span> </span>
                     </div>
                 </div>
                 <div class="row">
