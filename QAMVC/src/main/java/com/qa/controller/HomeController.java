@@ -1,15 +1,26 @@
 package com.qa.controller;
 
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
+import com.qa.model.Product;
 import com.qa.service.IProductService;
 
 @Controller
+@SessionAttributes("product")
 public class HomeController {
+	
+	public static ArrayList<Integer> productIDList = new ArrayList<Integer>();
 	
 	@Autowired
 	IProductService productservice;
@@ -21,8 +32,19 @@ public class HomeController {
 		return "home";
 	}
 	
+	
 	@RequestMapping(value="/cart")
 	public String cart() {
+		
+		return "cart";
+	}
+	
+	@RequestMapping(value = "/cart", method = RequestMethod.GET)
+	public String getProductsInCart(@RequestParam(value="cartButton") int id, HttpServletRequest request, final Model model) {
+
+		
+		final Product product = productservice.getAProduct(id);
+		request.setAttribute("product", product);
 		
 		return "cart";
 	}

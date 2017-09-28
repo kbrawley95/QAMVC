@@ -28,9 +28,11 @@ public class ProductService implements IProductService {
 		return (ArrayList<Product>) getJdbcTemplate().query(sql, mapper);
 	}
 
-	public Product getAProduct() {
-		// TODO Auto-generated method stub
-		return null;
+	public Product getAProduct(int productID) {
+		RowMapper<Product> mapper = new ProductRowMapper();
+		String sql = "SELECT * FROM dbo.Products WHERE ProductID=?";
+		return (Product) getJdbcTemplate().queryForObject(sql, new Object[]{productID}, mapper);
+		
 	}
 		    
 	 

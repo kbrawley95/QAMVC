@@ -34,15 +34,15 @@
 								<!-- Carousel items -->
 								<div class="carousel-inner">
 									<div class="active item" data-slide-number="0">
-										<img src="/resources/public-resources/imgs/welcome.jpg" style="width: 580px; height: 580px;" >
-										<div class="container-fluid" id="slide-content-0" style="display: none;">
-										
-										</div>
+										<img src="/resources/public-resources/imgs/welcome.jpg"
+											style="width: 580px; height: 580px;">
+										<div class="container-fluid" id="slide-content-0"
+											style="display: none;"></div>
 									</div>
 
 									<c:forEach items="${products}" var="product" varStatus="inner">
 										<div class="item" data-slide-number="${inner.index+1}">
-										
+
 											<img src="${imagesDir}${product.getName()}.jpg"
 												style="width: 580px; height: 580px;">
 											<div id="slide-content" style="display: none;">
@@ -55,8 +55,10 @@
 														<strong>£${product.getPrice()}</strong>
 													</h3>
 													<form action="/cart" action="post">
-														<input class="cartButton" type="submit"   value="Add to Cart">
+														<button name="cartButton" class="cartButton"
+															value="${product.getId()}">Add to Cart</button>
 													</form>
+
 												</div>
 											</div>
 										</div>
@@ -74,7 +76,7 @@
 									</a>
 								</div>
 							</div>
-						</div >
+						</div>
 					</div>
 				</div>
 				<!--/Slider----------------------->
