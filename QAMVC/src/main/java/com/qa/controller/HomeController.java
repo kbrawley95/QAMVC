@@ -40,10 +40,19 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/cart", method = RequestMethod.GET)
-	public String getProductsInCart(@RequestParam(value="cartButton") int id, HttpServletRequest request, final Model model) {
-
+	public String getProductsInCart(@RequestParam(value="cartButton", required = false) Integer id, HttpServletRequest request, final Model model) {
 		
-		final Product product = productservice.getAProduct(id);
+		final Product product;
+		
+		if(id==null) {
+			id = 1;
+			product = new Product();
+		}
+		else {
+		
+			product = productservice.getAProduct(id);
+		}
+			
 		request.setAttribute("product", product);
 		
 		return "cart";
