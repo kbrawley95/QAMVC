@@ -43,13 +43,16 @@
 					</tbody>
 					<tfoot>
 						<tr class="visible-xs">
-							<td class="text-center"><strong>£${product.getPrice()}</strong></td>
+							<td class="text-center"><strong>Sub-Total: ${product.getPrice()}</strong></td>
 						</tr>
 						<tr>
 							<td><a href="/home" class=" btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
 							<td colspan="2" class="hidden-xs"></td>
-							<td class="hidden-xs text-center"><strong>£${product.getPrice()}</strong></td>
-							<td><a href="/checkout" class="btn btn-success btn-block">Checkout <i class="angle-right"></i></a></td>
+							<td class="hidden-xs text-center"><strong>Sub-Total: £${product.getPrice()}</strong></td>
+							
+							<form action="/checkout" action="post" >
+								<td><button class="btn btn-success btn-block" value="${product.getId()}" name="checkoutButton"class="angle-right">Checkout</button></td>
+							</form>
 						</tr>
 					</tfoot>
 				</table>

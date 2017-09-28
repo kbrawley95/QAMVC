@@ -34,32 +34,32 @@
                                 <div class="col-sm-3 col-xs-3">
                                 <spring:url value="/resources/public-resources/imgs/"
 						var="imagesDir" />
-                                    <img class="img-responsive" src="${imagesDir}batmantshirt.jpg" />
+                                    <img class="img-responsive" src="${imagesDir}${product.getName()}.jpg" />
                                 </div>
                                 <div class="col-sm-6 col-xs-6">
-                                    <div class="col-xs-12">Batman T-Shirt (Signed By Ben Affleck)</div>
+                                    <div class="col-xs-12">${product.getName()}</div>
                                     <div class="col-xs-12"><small>Quantity:<span>1</span></small></div>
                                 </div>
                                 <div class="col-sm-3 col-xs-3 text-right">
-                                    <h6><span>£</span>30.50</h6>
+                                    <h6><span>£</span>${product.getPrice()}</h6>
                                 </div>
                             </div>
                             <div class="form-group"><hr /></div>
                             <div class="form-group">
                                 <div class="col-xs-12">
                                     <strong>Subtotal</strong>
-                                    <div class="pull-right"><span>£</span><span>30.50</span></div>
+                                    <div class="pull-right"><span>£</span><span>${product.getPrice()}</span></div>
                                 </div>
                                 <div class="col-xs-12">
                                     <small>Shipping</small>
-                                    <div class="pull-right"><span>£3.00</span></div>
+                                    <div class="pull-right"><span><c:out value="£3.00"/></span></div>
                                 </div>
                             </div>
                             <div class="form-group"><hr /></div>
                             <div class="form-group">
                                 <div class="col-xs-12">
                                     <strong>Order Total</strong>
-                                    <div class="pull-right"><span>£</span><span>33.50</span></div>
+                                    <div class="pull-right"><span>£</span><span><fmt:formatNumber type="number" maxFractionDigits="2" minFractionDigits="2" value="${product.getPrice() + 3.00}"/></span></div>
                                 </div>
                             </div>
                         </div>

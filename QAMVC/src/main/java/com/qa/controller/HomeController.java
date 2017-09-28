@@ -11,13 +11,11 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.qa.model.Product;
 import com.qa.service.IProductService;
 
 @Controller
-@SessionAttributes("product")
 public class HomeController {
 	
 	public static ArrayList<Integer> productIDList = new ArrayList<Integer>();
@@ -47,6 +45,7 @@ public class HomeController {
 		if(id==null) {
 			id = 1;
 			product = new Product();
+			
 		}
 		else {
 		
@@ -54,8 +53,28 @@ public class HomeController {
 		}
 			
 		request.setAttribute("product", product);
-		
 		return "cart";
+	}
+	
+	@RequestMapping(value = "/checkout", method = RequestMethod.GET)
+	public String sendProductsToCheckout(@RequestParam(value="checkoutButton", required = false) Integer id, HttpServletRequest request, final Model model) {
+		
+		final Product product;
+		if(id==null) {
+			id = 1;
+			
+			product = productservice.getAProduct(id);
+			
+		}
+		else {
+		
+			product = productservice.getAProduct(id);
+		}
+			
+		request.setAttribute("product", product);
+
+		
+		return "checkout";
 	}
 	
 	

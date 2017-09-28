@@ -100,11 +100,30 @@ public class Product {
 
 	}
 	
+	public void convertImage(byte[] image, String imageFileName) {
+		imageFileName += name + ".jpg";
+		
+		InputStream in = new ByteArrayInputStream(image);
+		try {
+			BufferedImage bufferedImage = ImageIO.read(in);
+			ImageIO.write(bufferedImage, "jpg", new File(imageFileName));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
 	public void setImage(byte[] image) {
 		this.image = image;
 		
 		convertImage(this.image);
 	}
+	
+	public void setImageAfterInitialAssignment( String imageFileName ) {
+		convertImage(getImage(), imageFileName);
+	}
+	
 	public String getImageFileName() {
 		return imageFileName;
 	}
