@@ -30,11 +30,11 @@
 									</div>
 								</div>
 							</td>
-							<td data-th="Price">${product.getPrice()}</td>
+							<td data-th="Price">£${product.getPrice()}</td>
 							<td data-th="Quantity">
 								<input type="number" class="form-control text-center" value="1">
 							</td>
-							<td data-th="Subtotal" class="text-center">${product.getPrice()}</td>
+							<td data-th="Subtotal" class="text-center">£${product.getPrice()}</td>
 							<td class="actions" data-th="">
 								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
 								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
@@ -43,12 +43,12 @@
 					</tbody>
 					<tfoot>
 						<tr class="visible-xs">
-							<td class="text-center"><strong>Sub-Total 10.99</strong></td>
+							<td class="text-center"><strong>£${product.getPrice()}</strong></td>
 						</tr>
 						<tr>
 							<td><a href="/home" class=" btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
 							<td colspan="2" class="hidden-xs"></td>
-							<td class="hidden-xs text-center"><strong>Sub-Total £30.50</strong></td>
+							<td class="hidden-xs text-center"><strong>£${product.getPrice()}</strong></td>
 							<td><a href="/checkout" class="btn btn-success btn-block">Checkout <i class="angle-right"></i></a></td>
 						</tr>
 					</tfoot>
