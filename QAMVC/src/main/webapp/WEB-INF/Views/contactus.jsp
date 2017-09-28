@@ -14,20 +14,27 @@
               <p> However, if instead you would simply rather provide us with feedback, please fill out the form below.</p>
               <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                  <form class="form-horizontal">
+                  <form class="form-horizontal" id="productForm">
                     <div class="form-group">
                       <label for="exampleInputName2">Name</label>
-                      <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                   
+                      <input type="text" class="form-control" name="name" id="exampleInputName2" placeholder="Jane Doe" pattern="[A-Za-z *0-9]{5,15}" title="Minimum 5 Characters" required >
+                  
                     </div>
                     <div class="form-group">
+<<<<<<< HEAD
             "src/main/java/com/qa/controller/HomeController.java"          <label for="exampleInputEmail2">Email</label>
                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+=======
+                      <label for="exampleInputEmail2">Email</label>
+                      <input type="email" class="form-control" name="email" id="exampleInputEmail2" placeholder="jane.doe@example.com" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Please enter valid email address" required>
+>>>>>>> Validation
                     </div>
                     <div class="form-group ">
                       <label for="exampleInputText">Your Message</label>
-                     <textarea  class="form-control" placeholder="Description"></textarea> 
+                     <textarea  class="form-control" placeholder="Description" pattern="[a-zA-Z0-9._%+-/\%@ *]{5, 250}" title="Minimum Character Counter: 5" required></textarea> 
                     </div>
-                    <button type="submit" class="btn btn-default">Send Message</button>
+                    <button type="submit" class="btn btn-default" >Send Message</button>
                   </form>
                   
                   <br/>

@@ -36,3 +36,5 @@ buildNumber.properties
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
 /build/
+QAMVC/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+QAMVC/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/Views/home_jsp.java

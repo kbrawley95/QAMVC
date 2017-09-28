@@ -23,6 +23,11 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="C:/Users/Administrator/Documents/Github/QAMVC/QAMVC/src/main/webapp/WEB-INF/lib/mssql-jdbc-6.2.1.jre8.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Administrator/Documents/GitHub/QAMVC/QAMVC/src/main/webapp/WEB-INF/lib/mssql-jdbc-6.2.1.jre8.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
