@@ -22,13 +22,8 @@
                   
                     </div>
                     <div class="form-group">
-<<<<<<< HEAD
-            "src/main/java/com/qa/controller/HomeController.java"          <label for="exampleInputEmail2">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-=======
                       <label for="exampleInputEmail2">Email</label>
                       <input type="email" class="form-control" name="email" id="exampleInputEmail2" placeholder="jane.doe@example.com" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Please enter valid email address" required>
->>>>>>> Validation
                     </div>
                     <div class="form-group ">
                       <label for="exampleInputText">Your Message</label>
