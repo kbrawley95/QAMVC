@@ -79,47 +79,47 @@
                             <div class="form-group">
                                 <div class="col-md-6 col-xs-12">
                                     <strong>First Name:</strong>
-                                    <input type="text" name="first_name" class="form-control"  required/>
+                                    <input type="text" name="first_name" class="form-control"  required pattern="[A-Za-z ]{1,15}"/>
                                 </div>
                                 <div class="span1"></div>
                                 <div class="col-md-6 col-xs-12">
                                     <strong>Surname:</strong>
-                                    <input type="text" name="last_name" class="form-control"  required/>
+                                    <input type="text" name="last_name" class="form-control"  required pattern="[A-Za-z ]{1,15}"/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12"><strong>Address:</strong></div>
                                 <div class="col-md-12">
-                                    <input type="text" name="address" class="form-control"  required/>
+                                    <input type="text" name="address" class="form-control"  required pattern="[A-Za-z *0-9]{1,30}"/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12"><strong>City:</strong></div>
                                 <div class="col-md-12">
-                                    <input type="text" name="city" class="form-control"  required/>
+                                    <input type="text" name="city" class="form-control"  required pattern="[A-Za-z ]{1,30}"/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12"><strong>Post Code:</strong></div>
                                 <div class="col-md-12">
-                                    <input type="text" name="zip_code" class="form-control"  required/>
+                                    <input type="text" name="zip_code" class="form-control"  required pattern="[A-Z *0-9]{6,8}"/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12"><strong>Phone Number:</strong></div>
-                                <div class="col-md-12"><input type="text" name="phone_number" class="form-control"  required/></div>
+                                <div class="col-md-12"><input type="text" name="phone_number" class="form-control"  required pattern="[0-9]{11,11}"/></div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12"><strong>Email Address:</strong></div>
-                                <div class="col-md-12"><input type="text" name="email_address" class="form-control"  required/></div>
+                                <div class="col-md-12"><input type="text" name="email_address" class="form-control"  required pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/></div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12"><strong>Billing Address:</strong></div>
-                                <div class="col-md-12"><input type="text" name="email_address" class="form-control"  required/></div>
+                                <div class="col-md-12"><input type="text" name="email_address" class="form-control"  required pattern="[A-Za-z *0-9]{1,30}"/></div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12"><strong>Billing Post Code:</strong></div>
-                                <div class="col-md-12"><input type="text" name="email_address" class="form-control"  required/></div>
+                                <div class="col-md-12"><input type="text" name="email_address" class="form-control"  required pattern="[A-Z *0-9]{6,8}"/></div>
                             </div>
                             <div class="form-check">
   							<label class="form-check-label">
@@ -145,11 +145,11 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12"><strong>Card Number:</strong></div>
-                                <div class="col-md-12"><input type="text" class="form-control" name="car_number"  required/></div>
+                                <div class="col-md-12"><input type="text" class="form-control" name="car_number"  required pattern="(?:^4[0-9]{12}(?:[0-9]{3})?$|^(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}$|^3[47][0-9]{13}$)"/></div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12"><strong>Card CVV:</strong></div>
-                                <div class="col-md-12"><input type="text" class="form-control" name="car_code"  required/></div>
+                                <div class="col-md-12"><input type="text" class="form-control" name="car_code"  required pattern="[0-9]{3,3}"/></div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12">
@@ -158,13 +158,13 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group">
                                 <div class="col-md-12"><strong>Month:</strong></div>
-                                <div class="col-md-12"><input type="text" class="form-control" name="car_code"  required/></div>
+                                <div class="col-md-12"><input type="text" class="form-control" name="car_code"  required pattern="^(1[0-2]|[1-9])$"/></div>
                             </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group">
                                 <div class="col-md-12"><strong>Year:</strong></div>
-                                <div class="col-md-12"><input type="text" class="form-control" name="car_code"  required/></div>
+                                <div class="col-md-12"><input type="text" class="form-control" name="car_code"  required pattern="^(201[7-9]|(202[0,2])"/></div>
                             </div>
                                 </div>
                             </div>
