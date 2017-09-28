@@ -32,21 +32,23 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <div class="col-sm-3 col-xs-3">
-                                    <img class="img-responsive" src="//c1.staticflickr.com/1/466/19681864394_c332ae87df_t.jpg" />
+                                <spring:url value="/resources/public-resources/imgs/"
+						var="imagesDir" />
+                                    <img class="img-responsive" src="${imagesDir}batmantshirt.jpg" />
                                 </div>
                                 <div class="col-sm-6 col-xs-6">
-                                    <div class="col-xs-12">Batman T-Shirt</div>
+                                    <div class="col-xs-12">Batman T-Shirt (Signed By Ben Affleck)</div>
                                     <div class="col-xs-12"><small>Quantity:<span>1</span></small></div>
                                 </div>
                                 <div class="col-sm-3 col-xs-3 text-right">
-                                    <h6><span>£</span>10.99</h6>
+                                    <h6><span>£</span>30.50</h6>
                                 </div>
                             </div>
                             <div class="form-group"><hr /></div>
                             <div class="form-group">
                                 <div class="col-xs-12">
                                     <strong>Subtotal</strong>
-                                    <div class="pull-right"><span>£</span><span>10.99</span></div>
+                                    <div class="pull-right"><span>£</span><span>30.50</span></div>
                                 </div>
                                 <div class="col-xs-12">
                                     <small>Shipping</small>
@@ -57,7 +59,7 @@
                             <div class="form-group">
                                 <div class="col-xs-12">
                                     <strong>Order Total</strong>
-                                    <div class="pull-right"><span>£</span><span>13.99</span></div>
+                                    <div class="pull-right"><span>£</span><span>33.50</span></div>
                                 </div>
                             </div>
                         </div>
