@@ -43,12 +43,12 @@
 					</tbody>
 					<tfoot>
 						<tr class="visible-xs">
-							<td class="text-center"><strong>Total 10.99</strong></td>
+							<td class="text-center"><strong>Sub-Total 10.99</strong></td>
 						</tr>
 						<tr>
 							<td><a href="/home" class=" btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
 							<td colspan="2" class="hidden-xs"></td>
-							<td class="hidden-xs text-center"><strong>Total £10.99</strong></td>
+							<td class="hidden-xs text-center"><strong>Sub-Total £30.50</strong></td>
 							<td><a href="/checkout" class="btn btn-success btn-block">Checkout <i class="angle-right"></i></a></td>
 						</tr>
 					</tfoot>
